@@ -15,9 +15,11 @@ GOTO BUILD
 
 :BUILD
 cd %repo%\..\
-pip install unicrypto
-pyinstaller -F ofscandecrypt.py %hiddenimports%
-copy *.exe %root%
+pip install .
+cd %repo%
+pyinstaller -F __main__.py %hiddenimports%
+cd %repo%\dist
+copy __main__.exe %root%\ofscandecrypt.exe
 GOTO :CLEANUP
 
 
