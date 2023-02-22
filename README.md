@@ -5,4 +5,7 @@ Also known as `ofscan.ini`
 
 ## Prereq
 There is one cryptographic library requirement, install it by  
-```pip install -r requirements.txt```
+```pip install .```
+
+## Usage
+```ofscandecrypt <secret>```
